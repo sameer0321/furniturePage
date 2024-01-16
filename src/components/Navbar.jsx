@@ -21,11 +21,11 @@ const Navbar = () => {
         <>
             <nav className='max-w-[1320px] mx-auto px-3 pt-4 overflow-hidden'>
                 <div className='flex items-center justify-between'>
-                    <div className='flex items-center gap-2' data-aos="fade-right"  data-aos-delay="2000">
+                    <div className='flex items-center gap-2'>
                         <img src={logo} alt="logo" />
                         <h2 className='text-white text-[33.02px] font-bold font-["Roboto"]'>FURNITURE</h2>
                     </div>
-                    <div className='flex items-center' data-aos="fade-left"  data-aos-delay="2000">
+                    <div className='flex items-center'>
                         <ul
                             className={`${nav ? "right-0" : "right-[-100%]"
                                 } flex items-center gap-14 mobileView duration-300`}
