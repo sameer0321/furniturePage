@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .mobileView{
+    @apply max-lg:flex-col max-lg:bg-black max-lg:w-full max-lg:h-screen max-lg:justify-center max-lg:items-center max-lg:fixed max-lg:top-0 max-lg:right-[-100%]
+  }
+  .row{
+    @apply flex flex-row flex-wrap -mx-[12px]
+  }
+}
