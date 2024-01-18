@@ -4,13 +4,13 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/thumbs';
 import { Controller, EffectFade, Thumbs } from 'swiper/modules';
-import image1 from '../assets/images/testimonial-1.png'
-import image2 from '../assets/images/testimonial-2.png'
-import image3 from '../assets/images/testimonial-3.png'
-import image4 from '../assets/images/testimonial-4.png'
-import image5 from '../assets/images/testimonial-5.png'
-import image6 from '../assets/images/testimonial-6.png'
-import image7 from '../assets/images/testimonial-7.png'
+import image1 from '../assets/images/testimonial-1.webp'
+import image2 from '../assets/images/testimonial-2.webp'
+import image3 from '../assets/images/testimonial-3.webp'
+import image4 from '../assets/images/testimonial-4.webp'
+import image5 from '../assets/images/testimonial-5.webp'
+import image6 from '../assets/images/testimonial-6.webp'
+import image7 from '../assets/images/testimonial-7.webp'
 const Testimonial = () => {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
     const TestimonialData = [
@@ -75,7 +75,7 @@ const Testimonial = () => {
             <h2 className='text-[#243040] text-2xl sm:text-3xl lg:text-[35px] font-Poppins font-bold max-w-[436px] mt-3 leading-normal'>Testimonial</h2>
             <div className='mt-[51px] mb-12 sm:mb-16 md:mb-20 lg:mb-[109px]'>
                 <div>
-                    <Swiper  spaceBetween={55} breakpoints={{ 450: { slidesPerView: 3, }, 700: { slidesPerView: 5, }, 1024: { slidesPerView: 7, }, }} centeredSlides={false} slidesPerView={1} thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }} modules={[Controller, Thumbs]} className="mySwiper2 ">
+                    <Swiper spaceBetween={55} breakpoints={{ 450: { slidesPerView: 3, }, 700: { slidesPerView: 5, }, 1024: { slidesPerView: 7, }, }} centeredSlides={false} slidesPerView={1} thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }} modules={[Controller, Thumbs]} className="mySwiper2 ">
                         {
                             TestimonialData.map((items, index) => (
                                 <SwiperSlide key={index}>
@@ -86,7 +86,7 @@ const Testimonial = () => {
                     </Swiper>
                 </div>
                 <div className='mt-5'>
-                    <Swiper onSwiper={setThumbsSwiper} centeredSlides={false}  slidesPerView={1} watchSlidesProgress={true} effect={'flip'} modules={[EffectFade, Thumbs]} autoplay={true} className="mySwiper flex justify-center items-center duration-300" >
+                    <Swiper onSwiper={setThumbsSwiper} centeredSlides={false} slidesPerView={1} watchSlidesProgress={true} effect={'flip'} modules={[EffectFade, Thumbs]} autoplay={true} className="mySwiper flex justify-center items-center duration-300" >
                         {
                             TestimonialData.map((items, index) => (
                                 <SwiperSlide key={index}>

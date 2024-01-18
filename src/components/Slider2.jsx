@@ -3,9 +3,9 @@ import CardBtn from "./CardBtn";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Product1 from "../assets/images/slider-2-img-1.png";
-import Product2 from "../assets/images/slider-2-img-2.png";
-import Product3 from "../assets/images/slider-2-img-3.png";
+import Product1 from "../assets/images/slider-2-img-1.webp";
+import Product2 from "../assets/images/slider-2-img-2.webp";
+import Product3 from "../assets/images/slider-2-img-3.webp";
 import { Arrow1, Arrow2, Star } from "./icon";
 
 const CustomPrevArrow = ({ onClick }) => (

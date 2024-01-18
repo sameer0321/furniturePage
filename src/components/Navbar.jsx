@@ -1,9 +1,9 @@
 import React from 'react'
-import logo from '../assets/images/logo.png'
-import SearchIcon from '../assets/images/search-icon.svg'
+import logo from '../assets/images/logo.webp'
 import CartIcon from '../assets/images/cart-icon.svg'
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { SearchIcon } from './icon'
 
 const Navbar = () => {
     const location = useLocation();
@@ -16,6 +16,11 @@ const Navbar = () => {
         else {
             document.body.classList.remove("max-lg:overflow-hidden")
         }
+    };
+    const [isSearchOpen, setIsSearchOpen] = useState(false)
+    const SearchOpen = () => {
+        setIsSearchOpen(!isSearchOpen);
+
     }
     return (
         <>
@@ -66,17 +71,25 @@ const Navbar = () => {
                             >
                                 Contact Us
                             </Link>
-                            <li className="gap-7 hidden max-sm:flex">
+                            <li className="gap-3 hidden max-sm:flex">
                                 <a onClick={show} href="#">
-                                    <img src={SearchIcon} alt="search-icon" />
+                                    <SearchIcon />
                                 </a>
                                 <Link to="/cart" onClick={show}>
                                     <img src={CartIcon} alt="cart-icon" />
                                 </Link>
                             </li>
                         </ul>
-                        <ul className='flex items-center gap-7 pl-10 max-sm:hidden'>
-                            <li><a href="#"><img src={SearchIcon} alt="search-icon" /></a></li>
+                        <ul className='flex items-center gap-3 pl-10 max-sm:hidden'>
+                            <li className='flex gap-4 items-center'>
+                                <span onClick={SearchOpen}>
+                                    {isSearchOpen ? (<div className=" relative cursor-pointer group mb-1 ">
+                                        <span className="flex bg-white  group-hover:bg-[#BD7D41]  absolute -left-3 duration-500 top-0 rotate-45 h-[2px] w-5"></span>
+                                        <span className="flex bg-white group-hover:bg-[#BD7D41] absolute -left-3 duration-500 -rotate-45 h-[2px] w-5 mb-1"></span>
+                                    </div>) : (<SearchIcon />)}
+                                </span>
+                                <input type='text' placeholder='  Sarch.....' className={`transition-all  ease-in duration-300 rounded max-sm:hidden ${isSearchOpen ? "w-[120px]" : "w-[0]"}`} />
+                            </li>
                             <li><a href="#"><img src={CartIcon} alt="cart-icon" /></a></li>
                         </ul>
                         <label className='lg:hidden pl-7' onClick={show}>

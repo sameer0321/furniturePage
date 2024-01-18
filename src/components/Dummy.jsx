@@ -1,7 +1,7 @@
 import React from "react";
-import Product1 from "../assets/images/slider-1.png";
-import Product2 from "../assets/images/slider-2.png";
-import Product3 from "../assets/images/slider-3.png";
+import Product1 from "../assets/images/slider-1.webp";
+import Product2 from "../assets/images/slider-2.webp";
+import Product3 from "../assets/images/slider-3.webp";
 // import sofa4 from "../assets/images/sofa4.webp";
 import { Star } from "./icon";
 import "slick-carousel/slick/slick.css";

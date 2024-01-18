@@ -2,9 +2,9 @@ import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import Product1 from "../assets/images/slider-1.png";
-import Product2 from "../assets/images/slider-2.png";
-import Product3 from "../assets/images/slider-3.png";
+import Product1 from "../assets/images/slider-1.webp";
+import Product2 from "../assets/images/slider-2.webp";
+import Product3 from "../assets/images/slider-3.webp";
 import { Star } from "./icon";
 const ProductData = [
     {

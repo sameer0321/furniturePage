@@ -1,5 +1,5 @@
 import React from 'react'
-import SofaImg from "../assets/images/sofa-img.png"
+import SofaImg from "../assets/images/sofa-img.webp"
 import CommonBtn from './CommonBtn'
 
 
@@ -21,8 +21,8 @@ const WoodenSofaSection = () => {
                             <img src={SofaImg} alt="sofaimg" className='lg:w-full max-lg:max-w-[500px] w-full relative z-[2]' />
                         </div>
                     </div>
-                </div >
-                <div data-aos="fade-left" className="min-[1440px]:w-[741px] lg:w-[600px] min-[983px]:w-[400px] sm:w-[500px] h-[270px] bg-slate-800 right-0 bottom-[-65px] absolute z-[-1]" />
+                </div>
+                <div className="min-[1440px]:w-[741px] lg:w-[600px] min-[983px]:w-[400px] sm:w-[500px] h-[270px] bg-slate-800 right-0 bottom-[-65px] absolute z-[-1]" />
             </div >
 
         </>
